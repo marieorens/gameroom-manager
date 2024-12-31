@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1247</width>
+    <height>775</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1090</x>
+     <y>720</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(170, 0, 0);
+color: rgb(0, 0, 0);
+font: 700 10pt &quot;Segoe UI&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Sortir</string>
+   </property>
+   <property name="icon">
+    <iconset theme="QIcon::ThemeIcon::SystemLogOut"/>
+   </property>
+  </widget>
+  <widget class="QTabWidget" name="tabWidget">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>1161</width>
+     <height>671</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>10</pointsize>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="currentIndex">
+    <number>1</number>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>19</width>
+     <height>19</height>
+    </size>
+   </property>
+   <property name="tabsClosable">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <widget class="QWidget" name="tab_4">
+    <attribute name="icon">
+     <iconset theme="QIcon::ThemeIcon::DocumentProperties"/>
+    </attribute>
+    <attribute name="title">
+     <string>Configuation TVs</string>
+    </attribute>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Nom de la TV:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>290</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Adresse IP:</string>
+     </property>
+    </widget>
+    <widget class="QListView" name="listView">
+     <property name="geometry">
+      <rect>
+       <x>730</x>
+       <y>120</y>
+       <width>256</width>
+       <height>461</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>690</x>
+       <y>80</y>
+       <width>141</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>TV configurées:</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>400</x>
+       <y>480</y>
+       <width>201</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(0, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Enregistrer</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::DocumentPageSetup"/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="zone_tv">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>160</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="zone_ip">
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>360</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab">
+    <attribute name="icon">
+     <iconset theme="QIcon::ThemeIcon::ListAdd"/>
+    </attribute>
+    <attribute name="title">
+     <string>Ajouter une session de jeu</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>Ici,vous pouvez créer une session quand un utilisateur vient jouer dans votre salle de jeu</string>
+    </attribute>
+    <widget class="QLabel" name="label">
+     <property name="geometry">
+      <rect>
+       <x>440</x>
+       <y>20</y>
+       <width>251</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Enregistrement de session</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>140</y>
+       <width>121</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Nom du jeu:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>710</x>
+       <y>140</y>
+       <width>181</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Console attribuée:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>360</y>
+       <width>261</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Durée allouée(en minutes):</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>840</x>
+       <y>380</y>
+       <width>51</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>TV:</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="jeu">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>200</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>NINJA GAIDEN 3</string>
+     </property>
+     <property name="minimumContentsLength">
+      <number>0</number>
+     </property>
+     <item>
+      <property name="text">
+       <string>NINJA GAIDEN 3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NBA 2K17</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Mortal Kombat vs. DC Univers</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>GTA V</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>mmCM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIGHT NIGHT CHAMPION</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Dead to Rights: Retribution</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BLUR</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Assassin's Creed Rogue</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PES 2025 | BITBOX PATCH</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>METAL GEAR SOLID V: GROUND ZEROES</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>EA SPORTS FC 24</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>CALL OF DUTY</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Captures</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>METRO 2033 Redux </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Sekiro: Shadows Die Twice </string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NARUTO SHIPPUDEN</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>ASSASSIN'S CREED IV Black Flag</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Need For Speed Unbound</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Metro Exodus</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PES 2025</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FIFA 20</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>FC 25</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MORTAL KOMBAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NARUTO SHIPPUDEN: Ultimate Ninja</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>God of War Ragnarok</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Need for Speed Heat</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>NBA 2K23</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>TEKKEN 7</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Shadow of the Tomb Raider</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QComboBox" name="console">
+     <property name="geometry">
+      <rect>
+       <x>820</x>
+       <y>200</y>
+       <width>311</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="editable">
+      <bool>true</bool>
+     </property>
+     <property name="currentText">
+      <string>PS3</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>PS3</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>PS4</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>XBOX</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QSpinBox" name="duree">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>420</y>
+       <width>211</width>
+       <height>41</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>520</x>
+       <y>540</y>
+       <width>231</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 10pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(0, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Enregistrer</string>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="tv">
+     <property name="geometry">
+      <rect>
+       <x>860</x>
+       <y>420</y>
+       <width>241</width>
+       <height>51</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_2">
+    <attribute name="icon">
+     <iconset theme="QIcon::ThemeIcon::DocumentSend"/>
+    </attribute>
+    <attribute name="title">
+     <string>Sessions en cours</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>Cette section vous permet de suivre en temps réel les sessions de jeu.</string>
+    </attribute>
+    <widget class="QListWidget" name="listWidgetSessions">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>1121</width>
+       <height>541</height>
+      </rect>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::SelectionMode::NoSelection</enum>
+     </property>
+     <property name="selectionRectVisible">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>490</x>
+       <y>20</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 700 12pt &quot;Segoe UI&quot;;
+color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>Sessions en cours</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="tab_3">
+    <attribute name="icon">
+     <iconset theme="QIcon::ThemeIcon::AppointmentNew"/>
+    </attribute>
+    <attribute name="title">
+     <string>Comptabilité</string>
+    </attribute>
+    <attribute name="toolTip">
+     <string>Ici, c'est un récapitulatif de sessiosn passées et des montants payés</string>
+    </attribute>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>11</y>
+       <width>1141</width>
+       <height>531</height>
+      </rect>
+     </property>
+     <column>
+      <property name="text">
+       <string>Date</string>
+      </property>
+      <property name="toolTip">
+       <string/>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Jeu</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Console</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>TV</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Durée(en minutes)</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Prix</string>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+     </column>
+    </widget>
+    <widget class="QPushButton" name="refresh_prices">
+     <property name="geometry">
+      <rect>
+       <x>1010</x>
+       <y>570</y>
+       <width>141</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(85, 85, 255);
+color: rgb(0, 0, 0);
+font: 700 10pt &quot;Segoe UI&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Actualiser</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::ViewRefresh"/>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
