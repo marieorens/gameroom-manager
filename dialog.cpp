@@ -168,14 +168,14 @@ void Dialog::addSessionToList(const QString &game, const QString &console, int d
     ui->listWidgetSessions->addItem(item);
     ui->listWidgetSessions->setItemWidget(item, sessionWidget);
 
-    // Créer un minuteur local pour chaque session
-    QTimer *sessionTimer = new QTimer(this);  // Nouveau timer pour chaque session
-    int *secondsLeft = new int(duree * 60);  // Pointeur vers secondsLeft pour le gérer dans la lambda
+    
+    QTimer *sessionTimer = new QTimer(this);  
+    int *secondsLeft = new int(duree * 60);  
 
-    // Connectez le signal du minuteur à une fonction lambda qui gère l'affichage du timer
+   
     connect(sessionTimer, &QTimer::timeout, [this, timerLabel, cutTvButton, selected_tv, sessionTimer, secondsLeft]() {
         if (*secondsLeft > 0) {
-            (*secondsLeft)--;  // Décrémenter la valeur pointée par secondsLeft
+            (*secondsLeft)--;  
             int minutes = *secondsLeft / 60;
             int seconds = *secondsLeft % 60;
             timerLabel->setText(QString("%1:%2").arg(minutes, 2, 10, QChar('0')).arg(seconds, 2, 10, QChar('0')));
@@ -184,7 +184,7 @@ void Dialog::addSessionToList(const QString &game, const QString &console, int d
             cutTvButton->setStyleSheet(
                 "background-color: red; color: white; border-radius: 5px;"
                 );
-            sessionTimer->stop();  // Arrêter le minuteur une fois que la session est terminée
+            sessionTimer->stop(); 
 
             QString tvIp = getTvIpByName(selected_tv);
             if (!tvIp.isEmpty()) {
@@ -195,7 +195,7 @@ void Dialog::addSessionToList(const QString &game, const QString &console, int d
         }
     });
 
-    // Démarrer le minuteur pour chaque session
+    // Démarrage minuteur 
     sessionTimer->start(1000);
 }
 
